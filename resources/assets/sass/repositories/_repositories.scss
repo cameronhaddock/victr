@@ -1,0 +1,52 @@
+@import "../variables";
+
+
+body{
+    color:#666666;
+}
+
+
+a{
+    &:hover,:focus{
+        text-decoration: none;
+    }
+}
+
+.repo-list {
+    .repo {
+        padding: 20px 0;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+
+        &:first-child {
+            border-top: 1px solid #efefef;
+        }
+
+        .meta {
+            flex-basis: 60%;
+
+            .repo-name{
+                color: $brand-primary;
+            }
+        }
+
+        .stats {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-basis: 40%;
+        }
+    }
+}
+
+.repository-details{
+    .repo-name{
+        color:$brand-primary;
+    }
+    .repo-detail{
+        background-color: #dfdfdf;
+        min-height: 100px;
+        padding:20px 15px;
+        margin:15px auto 0;
+    }
+}
